@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Game Producer</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            min-height: 100vh;
+            background-color: #000000;
+            color: white;
+            font-family: system-ui, -apple-system, sans-serif;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            padding: 1rem;
+        }
+
+        main {
+            width: 100%;
+            max-width: 80rem;
+            display: flex;
+            flex-direction: column;
+            gap: 4rem;
+        }
+
+        .header {
+            text-align: center;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            gap: 1rem;
+        }
+
+        .title-container {
+            display: flex;
+            flex-direction: column;
+            gap: 1rem;
+            width: 100%;
+        }
+
+        .title {
+            font-size: clamp(3rem, 10vw, 8rem);
+            font-weight: 900;
+            text-transform: uppercase;
+            letter-spacing: -0.05em;
+            line-height: 1;
+            background: linear-gradient(to right, #FFD700, #FFA500);
+            -webkit-background-clip: text;
+            background-clip: text;
+            color: transparent;
+        }
+
+        .content {
+            text-align: center;
+            display: flex;
+            flex-direction: column;
+            gap: 2rem;
+        }
+
+        .intro {
+            font-size: 1.875rem;
+            font-weight: 600;
+            color: #FFD700;
+        }
+
+        .description {
+            font-size: 1.5rem;
+            color: #FFFFFF;
+        }
+
+        .description a {
+            color: #FFD700;
+            text-decoration: none;
+            transition: color 0.2s;
+        }
+
+        .description a:hover {
+            color: #FFA500;
+        }
+
+        .outro {
+            font-size: 1.5rem;
+            color: #FFD700;
+            font-weight: 500;
+        }
+
+        .social {
+            display: flex;
+            justify-content: center;
+            gap: 3rem;
+            padding-top: 2rem;
+        }
+
+        .social a {
+            color: #808080;
+            transition: color 0.2s;
+        }
+
+        .social a:hover {
+            color: #FFD700;
+        }
+
+        .social svg {
+            width: 28px;
+            height: 28px;
+        }
+    </style>
+</head>
+<body>
+    <main>
+        <header class="header">
+            <div class="title-container">
+                <span class="title">Producer</span>
+                <span class="title">Makes a</span>
+                <span class="title">Difference</span>
+            </div>
+        </header>
+
+        <section class="content">
+            <p class="intro">I make games.</p>
+            <p class="description">
+                As a <a href="https://twitter.com/dx0ne" target="_blank" rel="noopener">gamer</a>,
+                a <a href="https://dx0ne.itch.io" target="_blank" rel="noopener">developer</a>,
+                and a <a href="https://linkedin.com/in/grzegorz-prusinowski" target="_blank" rel="noopener">producer</a>.
+            </p>
+            <p class="outro">Let's make games together.</p>
+        </section>
+
+        <footer class="social">
+            <a href="https://twitter.com/dx0ne" target="_blank" rel="noopener">
+                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 4s-.7 2.1-2 3.4c1.6 10-9.4 17.3-18 11.6 2.2.1 4.4-.6 6-2C3 15.5.5 9.6 3 5c2.2 2.6 5.6 4.1 9 4-.9-4.2 4-6.6 7-3.8 1.1 0 3-1.2 3-1.2z"/></svg>
+            </a>
+            <a href="https://dx0ne.itch.io" target="_blank" rel="noopener">
+                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                    <path d="M6 12h4m4 0h4"/>
+                    <path d="M8 10v4"/>
+                    <rect x="2" y="6" width="20" height="12" rx="2"/>
+                    <circle cx="17" cy="12" r="1"/>
+                    <circle cx="15" cy="10" r="1"/>
+                </svg>
+            </a>
+            <a href="https://linkedin.com/in/grzegorz-prusinowski" target="_blank" rel="noopener">
+                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"/><rect width="4" height="12" x="2" y="9"/><circle cx="4" cy="4" r="2"/></svg>
+            </a>
+        </footer>
+    </main>
+</body>
+</html>
